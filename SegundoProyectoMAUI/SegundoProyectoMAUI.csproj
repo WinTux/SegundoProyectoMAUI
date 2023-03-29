@@ -52,4 +52,10 @@
 		<PackageReference Include="ZXing.Net.Maui.CG" Version="1.0.2" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Pages\SegundaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

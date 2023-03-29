@@ -11,7 +11,7 @@
             VerticalOptions="Center">
             <zxing:CameraBarcodeReaderView x:Name="lectorCodigo"
                    IsDetecting="True" BarcodesDetected="OnCodigoBarrasDetectado"
-                   IsTorchOn="False" WidthRequest="300" HeightRequest="300"/>
+                   IsTorchOn="False" WidthRequest="200" HeightRequest="200"/>
 
             <Label
                 Text="RESULTADO"
@@ -19,12 +19,7 @@
                 FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <Button Text="Ejemplo canvas" Clicked="OnBotonSegundaPageClic"/>
 
         </VerticalStackLayout>
     </ScrollView>
