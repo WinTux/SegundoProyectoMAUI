@@ -20,6 +20,7 @@
                 HorizontalOptions="Center" />
 
             <Button Text="Ejemplo canvas" Clicked="OnBotonSegundaPageClic"/>
+            <Button Text="Ejemplo trazos" Clicked="OnBotonTerceraPageClic"/>
 
         </VerticalStackLayout>
     </ScrollView>
