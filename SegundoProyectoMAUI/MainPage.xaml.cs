@@ -35,5 +35,9 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync(nameof(TerceraPage));
     }
+    async void OnBotonCuartaPageClic(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(CuartaPage));
+    }
 }
 
