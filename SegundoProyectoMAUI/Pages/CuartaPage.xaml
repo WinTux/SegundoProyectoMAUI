@@ -6,7 +6,7 @@
              xmlns:ubica="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
              Title="CuartaPage">
     <Grid>
-        <mapa:Map x:Name="mimapa" IsShowingUser="True" IsTrafficEnabled="True" MapType="Satellite">
+        <mapa:Map x:Name="mimapa" IsShowingUser="True" IsTrafficEnabled="True" MapType="Satellite" MapClicked="OnMapaClic">
             <!-- <x:Arguments>
                 <MapSpan>
                     <x:Arguments>
@@ -63,6 +63,45 @@
                         </ubica:Location>
                     </mapa:Polygon.Geopath>
                 </mapa:Polygon>
+                <mapa:Polyline StrokeWidth="12" StrokeColor="Brown">
+                    <mapa:Polyline.Geopath>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50070702497536</x:Double>
+                                <x:Double>-68.13358151121861</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501175082090402</x:Double>
+                                <x:Double>-68.13310541911831</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501267664684008</x:Double>
+                                <x:Double>-68.13243889017801</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Polyline.Geopath>
+                </mapa:Polyline>
+                <mapa:Circle StrokeWidth="12" StrokeColor="DarkViolet" FillColor="#88881188">
+                    <mapa:Circle.Center>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50323411736288</x:Double>
+                                <x:Double>-68.13304564569506</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Circle.Center>
+                    <mapa:Circle.Radius>
+                        <Distance>
+                            <x:Arguments>
+                                <x:Double>5</x:Double>
+                            </x:Arguments>
+                        </Distance>
+                    </mapa:Circle.Radius>
+                </mapa:Circle>
             </mapa:Map.MapElements>
         </mapa:Map>
     </Grid>
