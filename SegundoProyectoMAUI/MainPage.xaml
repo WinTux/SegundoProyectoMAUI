@@ -22,6 +22,7 @@
             <Button Text="Ejemplo canvas" Clicked="OnBotonSegundaPageClic"/>
             <Button Text="Ejemplo trazos" Clicked="OnBotonTerceraPageClic"/>
             <Button Text="Ejemplo mapa" Clicked="OnBotonCuartaPageClic"/>
+            <Button Text="Ejemplo mapa" Clicked="OnBotonQuintaPageClic"/>
         </VerticalStackLayout>
     </ScrollView>
 
