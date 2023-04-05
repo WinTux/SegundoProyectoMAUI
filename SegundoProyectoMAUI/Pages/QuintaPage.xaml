@@ -4,9 +4,32 @@
              x:Class="SegundoProyectoMAUI.Pages.QuintaPage"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="QuintaPage">
-    <VerticalStackLayout>
-        <toolkit:MediaElement x:Name="video" WidthRequest="450" HeightRequest="350"
-                              Source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                              />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="1*, Auto, 25, 14, 20" ColumnDefinitions="*,2*,Auto,300">
+        <!-- <Grid.RowDefinitions>
+            <RowDefinition Height="450"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions> --> 
+        <toolkit:MediaElement x:Name="video" WidthRequest="450" HeightRequest="300"
+                              Source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                              ShouldAutoPlay="True" Aspect="Fill"/>
+        <Button
+            x:Name="btn"
+            Text="Play/Pause"
+            Clicked="OnBotonClic"
+            HorizontalOptions="Center"
+            Grid.Column="1"/>
+        <Slider
+            Grid.Column="1"
+            Grid.Row="1"
+            Maximum="1.0"
+            Minimum="0.0"
+            Rotation="0"
+            WidthRequest="100"
+            />
+    </Grid>
 </ContentPage>
